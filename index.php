@@ -1,8 +1,10 @@
 <!Doctype html>
 <html>
 
+    <!-- Code php de l'entête -->
 <?php include("header.php"); ?>
 
+    <!-- récupération des librairies nécessaires (ex: apiclient) -->
 <?php require('vendor/autoload.php');?>
     
 <div class="jumbotron">
@@ -15,6 +17,8 @@
             <p>Identifiant de la chaine YouTube: </p>
         </div>
         <div class="col-md-8">
+            
+            <!-- Formulaire pour récupérer l'identifiant de la chaine youtube -->
             <form action="videos.php" method="post">
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">http://www.youtube.com/channel/</span>
