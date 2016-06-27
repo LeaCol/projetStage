@@ -20,10 +20,9 @@
                     <span class="input-group-addon" id="basic-addon1">http://www.youtube.com/channel/</span>
                     <input type="text" name="identifiantChaine" class="form-control" placeholder="Identifiant" aria-describedby="basic-addon1">
                 </div>
-                 <button type="submit" class="btn btn-warning">Rechercher</button>
+                <button type="submit" class="btn btn-warning">Rechercher</button>
             </form>
         </div>
     </div>
 </div> 
-    
 </html>

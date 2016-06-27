@@ -1,10 +1,8 @@
 <!Doctype html>
 <html>
 
-<?php include("header.php"); ?>
-
-<?php
-
+<?php 
+include("header.php");
 require('vendor/autoload.php');
 
 $key = "AIzaSyAqWLUg905StnN4uYOwVFJU89cKV3CYvnA";
@@ -26,24 +24,26 @@ catch (Exception $e){
     header('Location:index.php');
     }
 ?>
+    
 <div class="jumbotron">
+    
     <?php foreach($chaines['items'] as $chaine):?>
     <h1><?= $chaine['snippet']['title'];?></h1>
     <?php endforeach;?>
+    
 </div>
     
 <div class= "container"> 
-    
     <div class="row">
         <?php foreach($videos['items'] as $video):?>
-        <div class="col-md-6 col-sm-4">
-            <div class="thumbnail">
-                <img src="<?= $video['snippet']['thumbnails']['high']['url'];?>" width="100%">
-                <div class="caption">
-                    <a href="http://www.youtube.com/watch?v=<?=$video['id']['videoId']?>"><?= $video['snippet']['title']; ?></a>
+            <div class="col-md-6 col-sm-4">
+                <div class="thumbnail">
+                    <img src="<?= $video['snippet']['thumbnails']['high']['url'];?>" width="100%">
+                    <div class="caption">
+                        <a href="http://www.youtube.com/watch?v=<?=$video['id']['videoId']?>"><?= $video['snippet']['title']; ?></a>
+                    </div>
                 </div>
             </div>
-        </div>
         <?php endforeach;?>
     </div>
 </div> 
