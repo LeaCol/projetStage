@@ -1,0 +1,14 @@
+{
+    "name": "p1503187/projet-stage",
+    "authors": [
+        {
+            "name": "Lea Collin",
+            "email": "lea.collin@etu.univ-lyon1.fr"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.0",
+        "slim/slim": "^3.4",
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}

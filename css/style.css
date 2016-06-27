@@ -1,0 +1,39 @@
+.btn {
+ 
+    margin-top: 20px;
+    margin-right: 20%;
+}
+
+
+.jumbotron {
+ 
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image:url('../wallpaper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1 {
+    text-align:center;
+    color: white;
+}
+
+p {
+ 
+    font-family:"courier";
+    font-size: 120%;
+    text-align: center;
+    
+}
+
+.thumbnail {
+ 
+    border-radius: 10px;
+    border-color: lightgrey;
+    border-width: 2px;
+    padding: 5px;
+    text-align: center;
+    color:black;
+}
