@@ -3,22 +3,7 @@
 
 <?php include("header.php"); ?>
 
-<?php
-
-require('vendor/autoload.php');
-
-$key = "AIzaSyDPSggxY_oDtqejaGHYnFiDVrCWenV2ls4";
-$client = new Google_Client();
-$client->setDeveloperKey($key);
-
-$guzzleClient = new \GuzzleHttp\Client(array( 'curl' => array( CURLOPT_SSL_VERIFYPEER => false, ), ));
-$client->setHttpClient($guzzleClient);
-
-$youtube = new Google_Service_Youtube($client);
-
-    
-$videos = $youtube->search->listSearch('id,snippet',['channelId'=> 'UC09UzgeNNIyO3-bVrUHRwRA', 'order' => 'date', 'maxResults' => 10, 'type' => 'video']);
-    ?>
+<?php require('vendor/autoload.php');?>
     
 <div class="jumbotron">
     <h1>Les 10 dernières vidéos de ta chaîne <i class="fa fa-youtube" aria-hidden="true"></i> préférée</h1>

@@ -7,7 +7,7 @@
 
 require('vendor/autoload.php');
 
-$key = "AIzaSyDPSggxY_oDtqejaGHYnFiDVrCWenV2ls4";
+$key = "AIzaSyAqWLUg905StnN4uYOwVFJU89cKV3CYvnA";
 $client = new Google_Client();
 $client->setDeveloperKey($key);
 
