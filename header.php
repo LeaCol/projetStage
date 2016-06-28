@@ -13,9 +13,11 @@
         <a class="navbar-brand" href="index.php" >Vidéos YouTube <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-target">
-        <ul class="nav navbar-nav navbar-right">
-            <a type="button" href="index.php" class="btn btn-default navbar-btn">Nouvelle recherche</a>
-        </ul>
+        <div class="container">
+            <ul class="nav navbar-nav navbar-right">
+                <a type="button" href="index.php" class="btn btn-default navbar-btn">Nouvelle recherche</a>
+            </ul>
+        </div>
     </div>
 </div>
 </body>
